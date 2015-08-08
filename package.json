@@ -1,0 +1,20 @@
+{
+  "name": "express_opengraph",
+  "version": "0.0.1",
+  "description": "express + opengraph",
+  "main": "og.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "open-graph": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node og.js"
+  },
+  "keywords": [
+    "express",
+    "opengraph"
+  ],
+  "author": "Bernhard Zwischenbrugger",
+  "license": "ISC"
+}
