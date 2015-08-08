@@ -1,5 +1,10 @@
 # opengraph-proxy
 
+Start it
+```
+node og.js
+```
+
 Example usage
 
 ```
