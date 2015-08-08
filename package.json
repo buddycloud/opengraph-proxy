@@ -4,6 +4,7 @@
   "description": "express + opengraph",
   "main": "og.js",
   "dependencies": {
+    "apicache": "0.0.12",
     "express": "^4.13.3",
     "open-graph": "^0.1.5"
   },

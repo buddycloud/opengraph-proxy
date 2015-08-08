@@ -1,5 +1,6 @@
 var express = require('express');
 var og = require('open-graph');
+var apicache = require('apicache').options({ debug: true }).middleware;
 
 var allowCrossDomain = function(req, res, next) {
     //res.header('Access-Control-Allow-Origin', 'buddycloud.org');
@@ -16,7 +17,7 @@ app.use(allowCrossDomain);
 
 var url = "http://github.com/samholmes/node-open-graph/raw/master/test.html";
 
-app.get('/', function (req, res) {
+app.get('/',apicache('10 days'), function (req, res) {
 og(req.query.url, function(err, meta){
     if(err){
         res.send(err);
