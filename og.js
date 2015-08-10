@@ -15,7 +15,7 @@ var app = express();
 app.use(allowCrossDomain);
 
 
-var url = "http://github.com/samholmes/node-open-graph/raw/master/test.html";
+//var url = "http://github.com/samholmes/node-open-graph/raw/master/test.html";
 
 app.get('/',apicache('10 days'), function (req, res) {
 og(req.query.url, function(err, meta){
@@ -39,7 +39,8 @@ var server = app.listen(3000, function () {
 
 
 
-
+/*
 og(url, function(err, meta){
     console.log(meta);
 })
+*/
