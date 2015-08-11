@@ -12,6 +12,12 @@
   "scripts": {
     "test": "node og.js"
   },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+      "start": "node og.js"
+  },
   "keywords": [
     "express",
     "opengraph"
